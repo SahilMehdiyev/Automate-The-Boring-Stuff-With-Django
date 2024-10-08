@@ -4,7 +4,7 @@ from django.shortcuts import render,redirect
 from .utils import get_all_custom_models
 from uploads.models import Upload
 from django.core.management import call_command
-
+from django.contrib import messages
 
 def import_data(request):
     if request.method == 'POST':
@@ -22,9 +22,9 @@ def import_data(request):
         # triger the importdata command
         try:
             call_command('importdata', file_path, model_name)
+            messages.success(request,'Data imported successfuly')
         except Exception as e:
-            raise e 
-        print(file_path)
+            messages.error(request, str(e))
 
         return redirect('import_data')
         

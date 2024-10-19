@@ -1,4 +1,4 @@
-PYTHON = $(PIPENV_RUN) python
+PYTHON = poetry run python
 DJANGO_MANAGE = $(PYTHON) manage.py
 
 runserver:
@@ -23,7 +23,7 @@ shell:
 	$(DJANGO_MANAGE) shell
 
 install:
-	pip install -r requirements.txt
+	poetry install
 
 docker-up:
 	docker-compose up -d

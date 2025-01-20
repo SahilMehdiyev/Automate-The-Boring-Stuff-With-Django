@@ -1,34 +1,76 @@
 # Automate The Boring Stuff With Django
 
-**Automate The Boring Stuff With Django** is a project that aims to automate repetitive tasks and processes using the Django framework. Inspired by the concept of automating everyday tasks, this project brings together Python and Django to build simple, but efficient automation tools.
+This project is designed to demonstrate the use of Django for automating repetitive tasks and creating efficient web applications. It is inspired by the popular book *Automate the Boring Stuff with Python*, focusing on leveraging Django's powerful features for rapid development.
 
-## Project Overview
+## Features
 
-In today's fast-paced world, automation is key to increasing productivity and saving time. This project explores how Django can be used to automate mundane tasks and processes, particularly those that involve web development, data management, and system administration. By automating these tasks, the project aims to make development and system management more efficient and less tedious.
-
-### Features
-
-- Automates repetitive tasks within Django applications.
-- Includes scripts for batch data processing and web scraping.
-- Integration with popular libraries such as Celery and Redis for task management.
-- Web-based interfaces for managing automation tasks.
-- Scalable design for handling multiple tasks in parallel.
-
-## Technologies Used
-
-- **Python 3.10** (or higher)
-- **Django 5.1.1**
-- **Celery 5.4.0** – Task queue for asynchronous task management.
-- **Redis 5.1.1** – Backend for Celery.
-- **AMQP** – Protocol for messaging and queuing.
-- **PostgreSQL/MySQL** – Database for storing task-related data.
-- **Docker** (optional) – Containerization for development and deployment.
+- User-friendly web interface
+- Task automation capabilities
+- Integration with third-party services (e.g., email, APIs)
+- Secure and scalable architecture
+- Modular and reusable code structure
 
 ## Installation
 
-Follow the steps below to install and set up the project locally:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SahilMehdiyev/Automate-The-Boring-Stuff-With-Django.git
+   cd Automate-The-Boring-Stuff-With-Django
+   ```
 
-### 1. Clone the repository
+2. **Install dependencies:**
+   Ensure you have [Poetry](https://python-poetry.org/) installed, then run:
+   ```bash
+   poetry install
+   ```
 
-```bash
-git clone https://github.com/SahilMehdiyev/Automate-The-Boring-Stuff-With-Django.git
+3. **Set up environment variables:**
+   Create a `.env` file in the root directory with the following variables:
+   ```plaintext
+   DEBUG=True
+   SECRET_KEY=your-secret-key
+   EMAIL_HOST=smtp.gmail.com
+   EMAIL_PORT=587
+   EMAIL_USE_TLS=True
+   EMAIL_HOST_USER=your_email@gmail.com
+   EMAIL_HOST_PASSWORD=your_email_password
+   ```
+
+4. **Apply migrations:**
+   ```bash
+   poetry run python manage.py migrate
+   ```
+
+5. **Run the development server:**
+   ```bash
+   poetry run python manage.py runserver
+   ```
+
+6. Open your browser and navigate to `http://127.0.0.1:8000`.
+
+## Usage
+
+- **Automated Tasks:** Add tasks through the web interface and monitor their execution.
+- **Integration:** Configure third-party APIs in the settings to enhance functionality.
+- **Customization:** Modify existing apps or add new ones to suit your needs.
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your branch and open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or support, please reach out to:
+
+- **Author:** Sahil Mehdiyev
+- **Email:** sahil@example.com
+- **GitHub:** [SahilMehdiyev](https://github.com/SahilMehdiyev)

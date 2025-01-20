@@ -45,10 +45,3 @@ celery-beat:
 celery-flower:
 	poetry run celery -A awd_main flower
 
-# Clean up
-clean-pyc:
-	find . -name "*.pyc" -o -name "*.pyo" -delete
-
-clean-migrations:
-	find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
-	find . -path "*/migrations/*.pyc"  -delete

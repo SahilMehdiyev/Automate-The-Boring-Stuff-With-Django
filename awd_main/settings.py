@@ -155,3 +155,7 @@ EMAIL_PORT = env("EMAIL_PORT", cast=int, default=587)
 EMAIL_USE_TLS = env("EMAIL_USE_TLS", cast=bool, default=True)
 EMAIL_HOST_USER = env("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+
+
+DEFAULT_FROM_EMAIL = 'Authomate with Django <branchsahil@gmail.com>'
+DEFAULT_TO_EMAIL = 'branchsahil@gmail.com'

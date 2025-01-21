@@ -72,5 +72,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or support, please reach out to:
 
 - **Author:** Sahil Mehdiyev
-- **Email:** sahil@example.com
+- **Email:** branchsahil@gmail.com
 - **GitHub:** [SahilMehdiyev](https://github.com/SahilMehdiyev)
